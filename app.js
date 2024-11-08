@@ -218,6 +218,13 @@ Exercise 12
 Solve Exercise 12 here:
 */
 
+for (let x = 0; x < game.gyms.length; x++){
+    if (game.gyms[x].difficulty < 6) {
+        game.gyms[x].completed = true;
+    }
+}
+
+console.log(game.gyms)
 
 /*
 Exercise 13
