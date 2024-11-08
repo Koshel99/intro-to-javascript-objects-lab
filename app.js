@@ -278,6 +278,13 @@ This method should:
 
 Solve Exercise 14 here:
 */
+
+game.partyCount = function() {
+    return game.party.length;
+};
+
+console.log(game.partyCount()); 
+
 /*
 
 Exercise 15
@@ -287,6 +294,14 @@ Exercise 15
 Solve Exercise 15 here:
 */
 
+for (let x =0; x < game.gyms.length; x++){
+    if (game.gyms[x].difficulty < 8){
+        game.gyms[x].completed = true
+    }
+}
+
+console.log(game.gyms)
+
 /*
 Exercise 16
 1. Log the entire `game` object to the console. Take a moment to review the changes you've made throughout the exercises.
@@ -295,4 +310,5 @@ Exercise 16
 Solve Exercise 16 here:
 */
 
+console.log(game);
 
